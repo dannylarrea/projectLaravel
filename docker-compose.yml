@@ -34,11 +34,11 @@ services:
         networks:
             - sail
         healthcheck:
-        test: ["CMD", "mysqladmin", "ping"]
+          test: ["CMD", "mysqladmin", "ping"]
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         restart: always
-        container_name: phpmyadmin
+        container_name: phpmyadminprojectLaravel
         depends_on:
             - mysql
         ports:
